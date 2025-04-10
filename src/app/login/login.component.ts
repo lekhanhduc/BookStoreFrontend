@@ -27,8 +27,6 @@ export class LoginComponent {
     this.authService.login(this.username, this.password)
       .subscribe({
         next: (response) => {
-          console.log(this.username, this.password)
-          console.log(response)
           const accessToken = response.data.accessToken;
           const refreshToken = response.data.refreshToken;
           this.authService.saveTokens(accessToken, refreshToken);

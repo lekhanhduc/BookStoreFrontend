@@ -1,12 +1,14 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, tap } from 'rxjs';
+import { BookDetailResponse } from '../models/BookDetailResponse';
+import { ApiResponse } from '../models/ApiResponse';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BookService {
-  private apiUrl = 'http://localhost:8080/api/v1/books-search-keyword';
+  private apiUrl = 'http://localhost:9191/search/books';
 
   constructor(private http: HttpClient) { }
 
@@ -15,15 +17,15 @@ export class BookService {
       .set('page', page);
 
     if (keyword) {
-      params = params.set('key', keyword);
+      params = params.set('keyword', keyword);
     }
 
     return this.http.get(this.apiUrl, { params });
   }
 
-  getBookById(id: number): Observable<any> {
-    const url = `http://localhost:8080/api/v1/books/${id}`;
-    return this.http.get(url);
+  getBookById(id: string): Observable<ApiResponse<BookDetailResponse>> {
+    const url = `http://localhost:9191/book/detail/${id}`;
+    return this.http.get<ApiResponse<BookDetailResponse>>(url);
   }
 
 }

@@ -20,49 +20,48 @@
     </div>
 
     <!-- Danh sách sách -->
-    <div class="row g-4" *ngIf="!loading && books.length > 0">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let book of books">
-            <div class="card book-item h-100" (click)="viewBookDetail(book.id)">
-                <img [src]="book.thumbnail" class="card-img-top book-cover" alt="Book Cover" />
-                <div class="card-body text-center">
-                    <h3 class="h5 card-title book-item-title">{{ book.title }}</h3>
-                    <p class="text-secondary">{{ book.description }}</p>
-                    <button class="btn btn-primary book-item-purchase">
-                        {{ book.price | currency:'USD' }}
-                    </button>
-                </div>
+    <div class="row g-4" *ngIf="!loading && books.totalElements > 0">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3" *ngFor="let book of books.data">
+          <div class="card book-item h-100" (click)="viewBookDetail(book.bookId)">
+            <img [src]="book.bookCover" class="card-img-top book-cover" alt="Book Cover" />
+            <div class="card-body text-center">
+              <h3 class="h5 card-title book-item-title">{{ book.title }}</h3>
+              <p class="text-secondary">{{ book.description }}</p>
+              <button class="btn btn-primary book-item-purchase">
+                {{ book.price | currency:'USD' }}
+              </button>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
 
     <!-- Hiển thị khi không có sách -->
-    <div *ngIf="!loading && books.length === 0" class="text-center mt-4">
+    <div *ngIf="!loading && books.totalElements === 0" class="text-center mt-4">
         <p class="text-secondary">No books found for "<strong>{{ searchTerm }}</strong>". Please try again.</p>
     </div>
 
-    <div class="row justify-content-center mt-4" *ngIf="totalPages >= 1">
+    <div class="row justify-content-center mt-4" *ngIf="books.totalPages > 0">
         <div class="col-auto">
             <nav>
                 <ul class="pagination">
                     <!-- Nút Previous -->
-                    <li class="page-item" [class.disabled]="currentPage === 1">
+                    <li class="page-item" [class.disabled]="books.currentPage === 1">
                         <button class="page-link" (click)="onPreviousPage()">Previous</button>
                     </li>
 
                     <!-- Danh sách các số trang -->
-                    <li class="page-item" [class.active]="page === currentPage" *ngFor="let page of pages">
+                    <li class="page-item" [class.active]="page === books.currentPage" *ngFor="let page of pages">
                         <button class="page-link" (click)="fetchBooks(page, searchTerm)">
                             {{ page }}
                         </button>
                     </li>
 
                     <!-- Nút Next -->
-                    <li class="page-item" [class.disabled]="currentPage === totalPages">
+                    <li class="page-item" [class.disabled]="books.currentPage === books.totalPages">
                         <button class="page-link" (click)="onNextPage()">Next</button>
                     </li>
                 </ul>
             </nav>
         </div>
     </div>
-
 </div>

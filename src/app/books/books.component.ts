@@ -4,6 +4,9 @@ import { BookService } from '../services/book.service';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { PageResponse } from '../models/PageResponse';
+import { BookDetailResponse } from '../models/BookDetailResponse';
+
 
 @Component({
   selector: 'app-books',
@@ -12,12 +15,17 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './books.component.html',
   styleUrls: ['./books.component.css']
 })
+
 export class BooksComponent implements OnInit {
-  books: any[] = [];
+  books: PageResponse<BookDetailResponse> = {
+    currentPage: 1,
+    pageSize: 5,
+    totalPages: 0,
+    totalElements: 0,
+    data: []
+  };
   loading: boolean = false;
   searchTerm: string = '';
-  currentPage: number = 1;
-  totalPages: number = 0;
   pages: number[] = []; // Danh sách số trang
 
   constructor(private router: Router, private bookService: BookService) { }
@@ -30,12 +38,8 @@ export class BooksComponent implements OnInit {
     this.loading = true;
     this.bookService.getBooks(page, search).subscribe({
       next: (response) => {
-        this.books = response.data.data;
-        this.currentPage = response.data.currentPage;
-        this.totalPages = response.data.totalPages;
-
-        this.pages = Array.from({ length: this.totalPages }, (_, i) => i + 1);
-
+        this.books = response;
+        this.pages = Array.from({ length: this.books.totalPages }, (_, i) => i + 1);
         this.loading = false;
       },
       error: (err) => {
@@ -50,18 +54,18 @@ export class BooksComponent implements OnInit {
   }
 
   onPreviousPage(): void {
-    if (this.currentPage > 1) {
-      this.fetchBooks(this.currentPage - 1, this.searchTerm);
+    if (this.books.currentPage > 1) {
+      this.fetchBooks(this.books.currentPage - 1, this.searchTerm);
     }
   }
 
   onNextPage(): void {
-    if (this.currentPage < this.totalPages) {
-      this.fetchBooks(this.currentPage + 1, this.searchTerm);
+    if (this.books.currentPage < this.books.totalPages) {
+      this.fetchBooks(this.books.currentPage + 1, this.searchTerm);
     }
   }
 
-  viewBookDetail(id: number): void {
+  viewBookDetail(id: string): void {
     this.router.navigate([`/book-detail/${id}`]);
   }
 }
