@@ -1,0 +1,75 @@
+<div id="register-page" class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card shadow-lg p-4 register-card">
+        <div class="card-body">
+            <h2 class="text-center mb-4">{{ 'REGISTER.TITLE' | translate }}</h2>
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                <!-- First Name -->
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">{{ 'REGISTER.FIRST-NAME.LABEL' | translate }}</label>
+                    <input type="text" id="firstName" class="form-control" formControlName="firstName" />
+                    <div *ngIf="registerForm.get('firstName')?.invalid && registerForm.get('firstName')?.touched"
+                        class="text-danger small mt-1">
+                        {{ 'REGISTER.FIRST-NAME.ERROR' | translate }}
+                    </div>
+                </div>
+
+                <!-- Last Name -->
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">{{ 'REGISTER.LAST-NAME.LABEL' | translate }}</label>
+                    <input type="text" id="lastName" class="form-control" formControlName="lastName" />
+                    <div *ngIf="registerForm.get('lastName')?.invalid && registerForm.get('lastName')?.touched"
+                        class="text-danger small mt-1">
+                        {{ 'REGISTER.LAST-NAME.ERROR' | translate }}
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">{{ 'REGISTER.EMAIL.LABEL' | translate }}</label>
+                    <input type="email" id="email" class="form-control" formControlName="email" />
+                    <div *ngIf="registerForm.get('email')?.hasError('required') && registerForm.get('email')?.touched"
+                        class="text-danger small mt-1">
+                        {{ 'REGISTER.EMAIL.REQUIRED' | translate }}
+                    </div>
+                    <div *ngIf="registerForm.get('email')?.hasError('email') && registerForm.get('email')?.touched"
+                        class="text-danger small mt-1">
+                        {{ 'REGISTER.EMAIL.INVALID' | translate }}
+                    </div>
+                </div>
+
+                <!-- Password -->
+                <div class="mb-3">
+                    <label for="password" class="form-label">{{ 'REGISTER.PASSWORD.LABEL' | translate }}</label>
+                    <input type="password" id="password" class="form-control" formControlName="password" />
+                    <div *ngIf="registerForm.get('password')?.hasError('required') && registerForm.get('password')?.touched"
+                        class="text-danger small mt-1">
+                        {{ 'REGISTER.PASSWORD.REQUIRED' | translate }}
+                    </div>
+                    <div *ngIf="registerForm.get('password')?.hasError('minlength') && registerForm.get('password')?.touched"
+                        class="text-danger small mt-1">
+                        {{ 'REGISTER.PASSWORD.MINLENGTH' | translate }}
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary w-100" [disabled]="registerForm.invalid">
+                    {{ 'REGISTER.BUTTON' | translate }}
+                </button>
+                
+                <!-- Login Link -->
+                <div class="text-center mt-3">
+                    <p class="text-muted">
+                        {{ 'REGISTER.LOGIN.TEXT' | translate }}
+                        <a routerLink="/sign-in" class="text-primary">{{ 'REGISTER.LOGIN.LINK' | translate }}</a>
+                    </p>
+                </div>
+                <div class="text-center">
+                    <p class="text-muted">
+                        {{ 'REGISTER.HOME.TEXT' | translate }}
+                        <a routerLink="/" class="text-primary">{{ 'REGISTER.HOME.LINK' | translate }}</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

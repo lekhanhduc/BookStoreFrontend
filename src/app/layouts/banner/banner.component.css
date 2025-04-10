@@ -1,0 +1,82 @@
+@import '../../app.component.css';
+
+.banner-container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 80px;
+    height: auto;
+}
+
+.banner-description {
+    flex-grow: 1;
+}
+
+.banner-image {
+    flex-grow: 1;
+
+    img {
+        width: 85%;
+    }
+}
+
+.banner-text {
+    line-height: 100%;
+}
+
+.banner-subtitle {
+    color: #946659;
+    font-size: 25px;
+}
+
+.banner-title {
+    font-size: 70px;
+    line-height: 1.5em;
+    font-weight: 900;
+    font-family: 'DM Serif ';
+}
+
+.banner-description {
+    width: 80%;
+    font-size: 16px;
+    line-height: 23px;
+    color: #946659;
+    margin-bottom: 10px;
+}
+
+.banner-actions {
+    margin-top: 50px;
+}
+
+.banner-button {
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 550;
+    border: none;
+}
+
+.banner-button--primary {
+    background-color: #946659;
+    color: aliceblue;
+    margin-right: 30px;
+}
+
+.banner-button--secondary {
+    background-color: antiquewhite;
+}
+
+.banner-button--secondary:hover {
+    background-color: coral;
+}
+
+.footer-banner {
+    margin-top: 50px;
+}
+
+.title-footer {
+    font-weight: 800;
+}
+
+.footer-images img {
+    max-width: 200px;
+    height: auto;
+}

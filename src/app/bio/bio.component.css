@@ -1,0 +1,174 @@
+#bio-main {
+    width: 100%;
+    background-color: rgb(252, 235, 230);
+    height: 470px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-bio h1 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.banner-bio p {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+}
+
+.my-story h1 {
+    font-size: 46px;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 20px;
+}
+
+.my-story p {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #555;
+}
+
+.my-story a {
+    margin-right: 10px;
+    font-size: 24px;
+    color: #555;
+    text-decoration: none;
+}
+
+.my-story a:hover {
+    color: #000;
+}
+
+.logo-author img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.personal {
+    margin-top: 100px;
+    background-color: #FFFAF8;
+}
+
+.personal-content {
+    padding: 100px 0px;
+}
+
+.awards {
+    margin-top: 100px;
+}
+
+.awards h1 {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.award-item {
+    margin-bottom: 30px;
+}
+
+.award-item img {
+    max-width: 130px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.award-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.award-item p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.quote-section {
+    margin-top: 70px;
+    background-color: #8d5b4c;
+    color: white;
+    text-align: center;
+}
+
+.quote {
+    padding: 60px 0px;
+}
+
+.quote p {
+    font-size: 24px;
+    font-family: 'DM Serif Display', serif;
+    font-style: italic;
+    margin: 0 auto 20px;
+    max-width: 800px;
+}
+
+.quote span {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.follow-section {
+    background-color: #fffaF8;
+    padding: 50px 20px;
+}
+
+.instagram-icon i {
+    font-size: 48px;
+    color: #8d5b4c;
+    margin-bottom: 15px;
+}
+
+.follow-content h2 {
+    font-size: 28px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+.follow-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn-visit-instagram {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8d5b4c;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-visit-instagram:hover {
+    background-color: #6f4439;
+}

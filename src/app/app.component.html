@@ -1,0 +1,12 @@
+<ng-container *ngIf="!hideLayout">
+    <app-header></app-header>
+    <ng-container *ngIf="showBanner">
+        <app-banner></app-banner>
+    </ng-container>
+</ng-container>
+
+<router-outlet></router-outlet>
+
+<ng-container *ngIf="!hideLayout">
+    <app-footer></app-footer>
+</ng-container>

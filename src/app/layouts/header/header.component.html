@@ -1,0 +1,74 @@
+<header id="header-page" class="bg-light shadow-sm">
+    <div class="wrapper row align-items-center">
+        <!-- Logo -->
+        <div class="col-4 col-md-2 text-center text-md-start">
+            <div class="logo-header">
+                <img src="../../../assets/imgs/bookstore.jpg" alt="Logo" class="img-fluid" style="max-height: 80px;">
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="col-8 col-md-7 d-flex justify-content-center">
+            <nav class="menu-header">
+                <ul class="list-item d-flex m-0 p-0">
+                    <li class="item-header px-3">
+                        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                            class="nav-link text-dark">{{ 'HEADER.HOME' | translate }}</a>
+                    </li>
+                    <li class="item-header px-3">
+                        <a routerLink="/books" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                            class="nav-link text-dark">{{ 'HEADER.BOOKS' | translate }}</a>
+                    </li>
+                    <li class="item-header px-3">
+                        <a routerLink="/bio" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                            class="nav-link text-dark">{{ 'HEADER.BIO' | translate }}</a>
+                    </li>
+                    <li class="item-header px-3">
+                        <a routerLink="/contact" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                            class="nav-link text-dark">{{ 'HEADER.CONTACT' | translate }}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Account -->
+        <div class="col-12 col-md-3 text-center text-md-end mt-2 mt-md-0">
+            <div class="user-actions d-flex justify-content-center justify-content-md-end gap-2 flex-wrap">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle language" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            {{ 'HEADER.LANGUAGE' | translate }}
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="#" (click)="switchLanguage('vi')">Tiếng Việt</a></li>
+                            <li><a class="dropdown-item" href="#" (click)="switchLanguage('en')">English</a></li>
+                        </ul>
+                    </div>
+
+                    <a routerLink="/sign-up" class="btn-sign-up text-decoration-none"
+                        *ngIf="!(isLoggedIn$ | async)">{{'HEADER.SIGN-UP' | translate}}</a>
+                    <a routerLink="/sign-in" class="btn-sign-in text-decoration-none"
+                        *ngIf="!(isLoggedIn$ | async)">{{'HEADER.SIGN-IN' | translate}}</a>
+                </div>
+
+                <div class="dropdown" *ngIf="isLoggedIn$ | async">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="https://i.pinimg.com/236x/03/19/e7/0319e75748160709ceefa7398a4a7070.jpg"
+                            alt="User Avatar">
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" routerLink="/profile">Profile</a></li>
+                        <li><a class="dropdown-item" routerLink="/change-password">Change password</a></li>
+                        <li><a class="dropdown-item" routerLink="/my-book">My Book</a></li>
+                        <li>
+                            <button class="dropdown-item" (click)="logout()">{{'HEADER.SIGN-OUT' | translate}}</button>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</header>

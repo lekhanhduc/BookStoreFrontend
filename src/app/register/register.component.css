@@ -1,0 +1,56 @@
+#register-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.register-card {
+    width: 500px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #333;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-control {
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+button.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.text-muted {
+    font-size: 14px;
+}
+
+.text-danger {
+    font-size: 12px;
+}

@@ -1,0 +1,302 @@
+@import '../app.component.css';
+
+.home-page {
+    padding: 50px 0;
+    margin-top: 80px;
+}
+
+.author-img {
+    padding-right: 20px;
+}
+
+.author-img img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.author-content {
+    padding-left: 30px;
+    padding-right: 25px;
+    text-align: left;
+}
+
+.author-title {
+    font-size: 42px;
+    font-weight: 600;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.author-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn-read-more {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #915c45;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-read-more:hover {
+    background-color: #714131;
+}
+
+.author-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.author-details h4 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #333;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 5px;
+}
+
+.author-details p {
+    font-size: 14px;
+    color: #777;
+}
+
+.author-social a {
+    color: #915c45;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.author-social a:hover {
+    color: #714131;
+}
+
+.smoke-and-heart {
+    margin-top: 150px;
+    background-color: #F2F5F7;
+    padding: 50px 10px;
+}
+
+.reader-reviews {
+    background-color: #fdecea;
+    padding: 50px 0;
+}
+
+.wrapper-review {
+    padding: 50px 0px;
+}
+
+.section-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.section-title {
+    line-height: 100%;
+    font-size: 36px;
+    font-family: 'DM Serif Display', serif;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.btn-read-all {
+    width: 150px;
+    padding: 13px 18px;
+    background-color: #915c45;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-read-all:hover {
+    background-color: #714131;
+}
+
+.review-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.author-details .author-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.author-details .author-role {
+    font-size: 14px;
+    color: #777;
+}
+
+.subscribe-section {
+    margin-top: 100px;
+    background-color: #fdecea;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.subscribe-title {
+    font-size: 46px;
+    font-family: 'DM Serif Display', serif;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: center;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 10px;
+}
+
+.form-control {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-subscribe {
+    padding: 10px 20px;
+    background-color: #915c45;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-subscribe:hover {
+    background-color: #714131;
+}
+
+/* Book Covers */
+.book-cover-notification {
+    position: absolute;
+    max-width: 120px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.book-cover-left {
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%) rotate(-3deg);
+}
+
+.book-cover-right {
+    top: 50%;
+    right: 10%;
+    transform: translate(50%, -50%) rotate(3deg);
+}
+
+.book-cover-notification:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* Upcoming Book Section */
+.upcoming-book-section {
+    margin-top: 80px;
+    padding: 0 150px;
+}
+
+.book-cover-upcoming {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.upcoming-title {
+    font-size: 46px;
+    font-family: 'DM Serif Display', serif;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.upcoming-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.btn-notify-me {
+    padding: 14px 24px;
+    background-color: #915c45;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-notify-me:hover {
+    background-color: #714131;
+}

@@ -1,0 +1,175 @@
+{
+  "HEADER": {
+    "LANGUAGE": "English",
+    "SIGN_UP": "Sign Up",
+    "SIGN_IN": "Sign In",
+    "HOME": "Home",
+    "BOOKS": "Books",
+    "BIO": "Bio",
+    "CONTACT": "Contact",
+    "SIGN-OUT": "Sign Out",
+    "SIGN-IN": "Sign In",
+    "SIGN-UP": "Sign Up"
+  },
+  "BANNER": {
+    "NEW-RELEASE": "New Release",
+    "CONTENT-TILE": "This Dark Road to Mercy",
+    "CONTENT-DESCRIPTION": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    "READ-MORE": "Read More",
+    "BUY-NOW": "Buy Now",
+    "AS-FEATURED-ON": "AS FEATURED ON"
+  },
+  "FOOTER": {
+    "QUICK-LINKS": "Quick Links",
+    "HOME": "Home",
+    "BOOKS": "Books",
+    "BIO": "Bio",
+    "CONTACT": "Contact",
+    "ABOUT-US": "About Us",
+    "CONTACT-US": "Contact Us",
+    "PRIVACY-POLICY": "Privacy Policy",
+    "TERMS-OF-USE": "Terms of Use",
+    "FOLLOW-US": "Follow Us"
+  },
+  "HOME": {
+    "AUTHOR-TITLE": "A Word From The Author",
+    "AUTHOR-DESCRIPTION": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequunturmagni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+    "READ-MORE": "Read More",
+    "AUTHOR-NAME": "Le Khanh Duc",
+    "AUTHOR-ROLE": "Entrepreneur, Writer and Speaker.",
+    "SOCIAL-FACEBOOK": "Follow on Facebook",
+    "SOCIAL-TWITTER": "Follow on Twitter",
+    "SOCIAL-INSTAGRAM": "Follow on Instagram",
+    "SMOKE-HEART-TITLE": "Smoke And The Heart",
+    "SMOKE-HEART-DESCRIPTION": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequunturmagni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+    "BUY-COMPLETE-SERIES": "Buy Complete Series",
+    "READER-REVIEWS-TITLE": "What Readers Are Saying",
+    "READER-REVIEWS-SUBTITLE": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+    "READ-ALL": "Read All",
+    "REVIEW-TEXT": "Justo vestibulum risus imperdiet consectetur pretium urna augue etiam risus accumsan volutpat.",
+    "REVIEW-AUTHOR-NAME": "Review by",
+    "UPCOMING-BOOK-TITLE": "Upcoming Book",
+    "UPCOMING-BOOK-DESCRIPTION": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+    "NOTIFY-ME": "Notify Me",
+    "SUBSCRIBE-TITLE": "Subscribe Now to Get Regular Updates",
+    "SUBSCRIBE-EMAIL-PLACEHOLDER": "Your Email",
+    "SUBSCRIBE-BUTTON": "Submit"
+  },
+  "REVIEW": {
+    "TEXT1": "An extraordinary piece of work, filled with emotion and depth that captures the essence of human struggles.",
+    "AUTHOR1": "Mike Sendler",
+    "ROLE1": "Review on Book 1",
+    "TEXT2": "A captivating story that keeps you turning the pages, with a profound narrative and relatable characters.",
+    "AUTHOR2": "Charmaine Tobey",
+    "ROLE2": "Review on Book 2",
+    "TEXT3": "A brilliant exploration of themes that touch your heart and stimulate your mind. Highly recommended.",
+    "AUTHOR3": "Delmar Byers",
+    "ROLE3": "Review on Book 3",
+    "TEXT4": "A masterfully written book that combines storytelling with deep philosophical insights.",
+    "AUTHOR4": "Shanna Margolis",
+    "ROLE4": "Review on Book 4"
+  },
+  "LOGIN": {
+    "WELCOME-BACK": "Welcome Back!",
+    "CONTENT-LOGIN": "Please login to your account or connect using social media",
+    "SIGN-IN": "Sign In",
+    "SIGN-UP": "Sign Up",
+    "EMAIL": "Email",
+    "PASSWORD": "Password",
+    "FORGOT-PASSWORD": "Forgot Password?",
+    "REMEMBER-ME": "Remember Me",
+    "SOCIAL-MEDIA": "Login with Social Media",
+    "SIGN-IN-FACEBOOK": "Sign In with Facebook",
+    "SIGN-IN-GOOGLE": "Sign In with Google",
+    "SIGN-IN-GITHUb": "Sign In with Github",
+    "BACK-TO-HOME": "Back to Home"
+  },
+  "BIO": {
+    "TITLE": "About Kathryn",
+    "DESCRIPTION": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+    "MY-STORY": {
+      "TITLE": "My Story",
+      "DESCRIPTION": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+      "FACEBOOK": "Follow on Facebook",
+      "TWITTER": "Follow on Twitter",
+      "INSTAGRAM": "Follow on Instagram",
+      "IMAGE-ALT": "Image of Le Khanh Duc"
+    },
+    "PERSONAL-LIFE": {
+      "TITLE": "Personal Life",
+      "DESCRIPTION": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+      "IMAGE-ALT": "Personal Life of Le Khanh Duc"
+    },
+    "AWARDS": {
+      "TITLE": "Awards",
+      "BEST-AWARDS-2024": "Best Author Award 2024",
+      "BEST-AWARDS-2024-DESCRIPTION": "For outstanding contributions to literature.",
+      "BEST-AWARDS-2023": "World's #1 Best-selling Book 2024",
+      "BEST-AWARDS-2023-DESCRIPTION": "Recognized for record-breaking sales worldwide.",
+      "BEST-AWARDS-2022": "NYT Best-selling Author 2023",
+      "BEST-AWARDS-2022-DESCRIPTION": "Honored for exceptional storytelling and writing."
+    },
+    "QUOTE": {
+      "TEXT": "\"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.\"",
+      "AUTHOR": "- Le Khanh Duc"
+    },
+    "FOLLOW": {
+      "TITLE": "Follow @02_10_003",
+      "DESCRIPTION": "Join my journey on Instagram, where I share moments, stories, and inspiration.",
+      "BUTTON": "Visit Instagram"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Contact",
+    "DESCRIPTION": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+    "GET-IN-TOUCH": {
+      "TITLE": "Get In Touch",
+      "DESCRIPTION": "Feel free to reach out to us with any questions or inquiries.",
+      "EMAIL": "mail@example.com"
+    },
+    "FORM": {
+      "TITLE": "Send Me a Message",
+      "PLACEHOLDER": {
+        "NAME": "Your Name",
+        "EMAIL": "Your Email",
+        "SUBJECT": "Subject",
+        "MESSAGE": "Message"
+      },
+      "BUTTON": "Send Message"
+    }
+  },
+  "REGISTER": {
+    "TITLE": "Create Your Account",
+    "FIRST-NAME": {
+      "LABEL": "First Name",
+      "ERROR": "First Name is required."
+    },
+    "LAST-NAME": {
+      "LABEL": "Last Name",
+      "ERROR": "Last Name is required."
+    },
+    "EMAIL": {
+      "LABEL": "Email",
+      "REQUIRED": "Email is required.",
+      "INVALID": "Invalid email address."
+    },
+    "PASSWORD": {
+      "LABEL": "Password",
+      "REQUIRED": "Password is required.",
+      "MINLENGTH": "Password must be at least 6 characters."
+    },
+    "DOB": {
+      "LABEL": "Date of Birth",
+      "ERROR": "Date of Birth is required."
+    },
+    "BUTTON": "Register",
+    "LOGIN": {
+      "TEXT": "Already have an account?",
+      "LINK": "Login"
+    },
+    "HOME": {
+      "TEXT": "Go back home",
+      "LINK": "Home"
+    }
+  }
+}

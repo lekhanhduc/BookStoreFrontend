@@ -1,0 +1,104 @@
+@import '../app.component.css';
+
+.book-section {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.row.g-4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: contain;
+    background-color: #f8f9fa;
+}
+
+
+
+.book-item-title {
+    font-size: 23px;
+    font-weight: 900;
+    font-family: 'DM Serif ';
+}
+
+.book-item-purchase {
+    background-color: #946659;
+    width: 80%;
+    padding: 11px 20px;
+    border-radius: 3px;
+    border: none;
+    font-weight: 550;
+    margin: 0 auto;
+}
+
+
+.book-item {
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.book-item:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.book-search {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style cho thanh tìm kiếm */
+.search-input {
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    padding: 10px;
+}
+
+.search-btn {
+    font-size: 16px;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Spinner CSS */
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    border-width: 0.3rem;
+    margin-top: 1rem;
+}

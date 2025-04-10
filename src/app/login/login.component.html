@@ -1,0 +1,66 @@
+<div id="login-page" class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+
+            <!-- Section Title -->
+            <div class="col-12 text-center mb-5">
+                <h1 class="login-title">{{'LOGIN.WELCOME-BACK' | translate}}</h1>
+                <p class="login-subtitle">{{'LOGIN.CONTENT-LOGIN' | translate}}</p>
+            </div>
+
+            <!-- Login Form -->
+            <div class="col-md-5 border-end pe-4">
+                <div class="login-form">
+                    <div class="login-form">
+                        <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+                            <div class="mb-3">
+                                <label for="username" class="form-label">{{'LOGIN.EMAIL' | translate}}</label>
+                                <input type="text" class="form-control" id="username" name="username"
+                                    [(ngModel)]="username" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">{{'LOGIN.PASSWORD' | translate}}</label>
+                                <input type="password" class="form-control" id="password" name="password"
+                                    [(ngModel)]="password" required />
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rememberMe" />
+                                    <label class="form-check-label" for="rememberMe">{{'LOGIN.REMEMBER-ME' |
+                                        translate}}</label>
+                                </div>
+                                <a href="#" class="text-decoration-none">{{'LOGIN.FORGOT-PASSWORD' | translate}}</a>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100"
+                                [disabled]="!loginForm.valid">{{'LOGIN.SIGN-IN' | translate}}</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Login Social -->
+            <div class="col-md-5 ps-4">
+                <div class="login-social">
+                    <h2 class="text-center mb-4">{{'LOGIN.SOCIAL-MEDIA' | translate}}</h2>
+                    <button class="btn btn-outline-primary w-100 mb-3">
+                        <i class="fa-brands fa-facebook me-2"></i> {{'LOGIN.SIGN-IN-FACEBOOK' | translate}}
+                    </button>
+                    <button class="btn btn-outline-danger w-100 mb-3">
+                        <i class="fa-brands fa-google me-2"></i> {{'LOGIN.SIGN-IN-GOOGLE' | translate}}
+                    </button>
+                    <button class="btn btn-outline-dark w-100">
+                        <i class="fa-brands fa-github me-2"></i> {{'LOGIN.SIGN-IN-GITHUB' | translate}}
+                    </button>
+                </div>
+            </div>
+
+            <!-- Back to Home Button -->
+            <div class="col-12 text-center mt-4">
+                <a routerLink="/" class="btn btn-light">
+                    <i class="fa-solid fa-arrow-left me-2"></i> {{'LOGIN.BACK-TO-HOME' | translate}}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

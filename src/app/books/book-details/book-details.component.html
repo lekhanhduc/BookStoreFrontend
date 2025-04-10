@@ -1,0 +1,95 @@
+<div class="wrapper container book-detail-section">
+    <!-- Banner book detail -->
+    <div class="row text-center mb-4">
+        <div class="col-12">
+            <div class="banner-book-detail d-flex align-items-center justify-content-center">
+                <div class="content-banner-book-detail text-center">
+                    <h1 class="display-4 display-md-3">Book Details</h1>
+                    <p class="fs-5">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Information book -->
+    <div class="row align-items-start infor-book-section">
+        <!-- Thumbnail -->
+        <div class="col-12 col-md-6">
+            <div class="thumbnail-book text-center">
+                <img [src]="bookDetail?.thumbnail || '../../../assets/imgs/book-cover1.png'"
+                    alt="{{ bookDetail?.title || 'Book Cover' }}" class="img-fluid" />
+            </div>
+        </div>
+        <!-- Book Details -->
+        <div class="col-12 col-md-6">
+            <div class="infor-detail-book">
+                <h1 class="book-title">{{ bookDetail?.title || 'Book Title' }}</h1>
+                <p class="book-author"><strong>Author:</strong> {{ bookDetail?.authorName || 'Unknown Author' }}</p>
+                <p class="book-description">
+                    {{ bookDetail?.description || 'No description available.' }}
+                </p>
+                <!-- Price Section -->
+                <div class="book-price mt-4">
+                    <h2 class="text-danger">{{ bookDetail?.price | currency: 'USD':'symbol':'1.0-0' }}</h2>
+                    <p class="text-muted">Inclusive of all taxes</p>
+                </div>
+                <!-- Actions Section -->
+                <div class="book-actions mt-4 d-flex gap-3">
+                    <button class="btn btn-primary btn-buy-now">Buy Now</button>
+                    <button class="btn btn-outline-secondary btn-add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Description Section -->
+    <div class="row description-section mt-5">
+        <div class="col-12">
+            <ul class="nav nav-tabs" id="bookTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
+                        data-bs-target="#description" type="button" role="tab" aria-controls="description"
+                        aria-selected="true">Description</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
+                        type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews (0)</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="bookTabContent">
+                <div class="tab-pane fade show active p-3" id="description" role="tabpanel"
+                    aria-labelledby="description-tab">
+                    <p>{{ bookDetail?.description || 'No detailed description available.' }}</p>
+                </div>
+                <div class="tab-pane fade p-3" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                    <p>No reviews yet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Related Products Section -->
+    <!-- <div class="row related-products-section mt-5">
+        <div class="col-12">
+            <h3 class="related-products-title text-center">Related Products</h3>
+            <div class="row g-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-item">
+                        <img src="../../../assets/imgs/book-cover2.png" class="card-img-top" alt="Related Product">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">John Roberts</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card product-item">
+                        <img src="../../../assets/imgs/book-cover3.png" class="card-img-top" alt="Related Product">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Another Title</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div>

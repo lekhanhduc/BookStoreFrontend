@@ -1,0 +1,44 @@
+<div class="main-contact">
+    <div class="contact-banner text-center">
+        <h1>{{ 'CONTACT.TITLE' | translate }}</h1>
+        <p>{{ 'CONTACT.DESCRIPTION' | translate }}</p>
+    </div>
+</div>
+
+<div class="container contact-section">
+    <div class="row">
+        <!-- Contact Information -->
+        <div class="col-12 col-md-4">
+            <h2>{{ 'CONTACT.GET-IN-TOUCH.TITLE' | translate }}</h2>
+            <p>{{ 'CONTACT.GET-IN-TOUCH.DESCRIPTION' | translate }}</p>
+            <div class="contact-email">
+                <i class="fa-solid fa-envelope"></i>
+                <span>{{ 'CONTACT.GET-IN-TOUCH.EMAIL' | translate }}</span>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-12 col-md-8">
+            <h3>{{ 'CONTACT.FORM.TITLE' | translate }}</h3>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control"
+                        placeholder="{{ 'CONTACT.FORM.PLACEHOLDER.NAME' | translate }}" />
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control"
+                        placeholder="{{ 'CONTACT.FORM.PLACEHOLDER.EMAIL' | translate }}" />
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control"
+                        placeholder="{{ 'CONTACT.FORM.PLACEHOLDER.SUBJECT' | translate }}" />
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" rows="4"
+                        placeholder="{{ 'CONTACT.FORM.PLACEHOLDER.MESSAGE' | translate }}"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">{{ 'CONTACT.FORM.BUTTON' | translate }}</button>
+            </form>
+        </div>
+    </div>
+</div>

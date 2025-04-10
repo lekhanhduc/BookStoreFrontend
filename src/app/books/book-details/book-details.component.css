@@ -1,0 +1,134 @@
+.book-detail-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 50px;
+}
+
+.infor-book-section {
+    flex: 1;
+    padding: 20px 0;
+}
+
+.banner-book-detail {
+    height: 300px;
+    width: 100%;
+}
+
+.content-banner-book-detail h1 {
+    font-weight: 600;
+    font-size: 60px;
+    font-family: 'DM Serif';
+}
+
+.content-banner-book-detail p {
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .content-banner-book-detail h1 {
+        font-size: 40px;
+    }
+
+    .content-banner-book-detail p {
+        font-size: 14px;
+    }
+
+    .banner-book-detail {
+        height: 200px;
+    }
+}
+
+.infor-detail-book .book-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.infor-detail-book .book-description {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #6c757d;
+}
+
+.book-price h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.book-price p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.book-actions {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.btn-buy-now {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #ff5722;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-buy-now:hover {
+    background-color: #e64a19;
+}
+
+.btn-add-to-cart {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #ccc;
+    background-color: white;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.description-section {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.app-footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.app-footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.app-footer a:hover {
+    text-decoration: underline;
+}
+
+.thumbnail-book img {
+    width: 350px;
+    height: auto;
+    object-fit: cover;
+}

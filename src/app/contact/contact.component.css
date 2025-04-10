@@ -1,0 +1,87 @@
+.main-contact {
+    width: 100%;
+    background-color: rgb(252, 235, 230);
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contact-banner h1 {
+        font-size: 50px;
+        font-weight: 700;
+        font-family: 'DM Serif Display', serif;
+        line-height: 1.2;
+    }
+
+    .contact-banner p {
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        margin-top: 10px;
+        color: #555;
+    }
+}
+
+.contact-section {
+    padding: 50px 20px;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: #8d5b4c;
+    margin-bottom: 30px;
+}
+
+.contact-email i {
+    font-size: 20px;
+}
+
+.contact-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'DM Serif Display', serif;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+.btn-submit {
+    background-color: #8d5b4c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #6f4439;
+}

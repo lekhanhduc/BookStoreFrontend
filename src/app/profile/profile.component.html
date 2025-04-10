@@ -1,0 +1,81 @@
+<div class="container mt-5 mb-5 bg-white">
+    <div class="row">
+        <div class="col-4 text-center">
+            <div class="avatar-wrapper">
+                <img [src]="avatarUrl" alt="Avatar" class="avatar img-fluid rounded-circle mb-5"
+                    (click)="fileInput.click()">
+            </div>
+            <input #fileInput type="file" class="d-none" accept="image/*" (change)="onFileSelected($event)">
+        </div>
+
+        <div class="col-8">
+            <h2 class="mb-4 text-primary">Edit Your Profile</h2>
+            <form (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" id="firstName" class="form-control" placeholder="Enter your first name"
+                            [(ngModel)]="user.firstName" name="firstName" required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" id="lastName" class="form-control" placeholder="Enter your last name"
+                            [(ngModel)]="user.lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <input type="text" id="phoneNumber" class="form-control" placeholder="Enter your phone number"
+                            [(ngModel)]="user.phoneNumber" name="phoneNumber" required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="hobbies" class="form-label">Hobbies</label>
+                        <input type="text" id="hobbies" class="form-control" placeholder="Enter your hobbies"
+                            [(ngModel)]="user.hobbies" name="hobbies">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="number" id="age" class="form-control" placeholder="Enter your age"
+                            [(ngModel)]="user.age" name="age" required>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="gender" class="form-label">Gender</label>
+                        <select id="gender" class="form-control" [(ngModel)]="user.gender" name="gender" required>
+                            <option value="">Select your gender</option>
+                            <option value="MALE">Male</option>
+                            <option value="FEMALE">Female</option>
+                            <option value="OTHER">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="description" class="form-label">Description</label>
+                        <input type="text" id="description" class="form-control" placeholder="Enter your description"
+                            [(ngModel)]="user.description" name="description">
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="dob" class="form-label">Date of Birth</label>
+                        <input type="date" id="dob" class="form-control" placeholder="Enter your date of birth"
+                            [(ngModel)]="user.dob" name="dob">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mt-4">
+                    <button type="submit" class="btn btn-primary me-2">Update</button>
+                    <button type="button" class="btn btn-danger">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

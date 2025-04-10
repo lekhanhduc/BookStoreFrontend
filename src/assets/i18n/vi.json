@@ -1,0 +1,179 @@
+{
+  "HEADER": {
+    "LANGUAGE": "Tiếng Việt",
+    "SIGN_UP": "Đăng ký",
+    "SIGN_IN": "Đăng nhập",
+    "HOME": "Trang chủ",
+    "BOOKS": "Sách",
+    "BIO": "Giới thiệu",
+    "CONTACT": "Liên hệ",
+    "SIGN-OUT": "Đăng xuất",
+    "SIGN-IN": "Đăng nhập",
+    "SIGN-UP": "Đăng ký",
+    "PROFILE": "Hồ sơ",
+    "DASHBOARD": "Bảng điều khiển",
+    "USERS": "Người dùng",
+    "AUTHOR": "Tác giả"
+  },
+  "BANNER": {
+    "NEW-RELEASE": "Sách mới",
+    "CONTENT-TILE": "Con đường tăm tối này đến với lòng trắc ẩn",
+    "CONTENT-DESCRIPTION": "Ngay từ đầu, những khát vọng không xuất phát từ sự chối bỏ bản thân, mà là kết quả của những nỗi đau lớn, tạo nên những ham muốn không tồn tại.",
+    "READ-MORE": "Đọc thêm",
+    "BUY-NOW": "Mua ngay",
+    "AS-FEATURED-ON": "ĐƯỢC ĐỀ CỬ"
+  },
+  "FOOTER": {
+    "QUICK-LINKS": "Liên kết nhanh",
+    "HOME": "Trang chủ",
+    "BOOKS": "Sách",
+    "BIO": "Giới thiệu",
+    "CONTACT": "Liên hệ",
+    "ABOUT-US": "Về chúng tôi",
+    "CONTACT-US": "Liên hệ",
+    "PRIVACY-POLICY": "Chính sách bảo mật",
+    "TERMS-OF-USE": "Điều khoản sử dụng",
+    "FOLLOW-US": "Theo dõi chúng tôi"
+  },
+  "HOME": {
+    "AUTHOR-TITLE": "Lời Từ Tác Giả",
+    "AUTHOR-DESCRIPTION": "Ngay từ đầu, những ham muốn không hề ẩn náu, căm ghét hay trốn chạy, mà thay vào đó, chúng gây ra những nỗi đau dẫn đến những ham muốn không tồn tại. Cũng không có lý do gì để chúng ta phải sợ hãi, vì chúng ta, những người đau buồn mà không đau đớn, sợ hãi, do đó, chúng ta tôn thờ, vì chúng ta không có cùng thời gian với công việc lao động và nỗi đau lớn như Will.",
+    "READ-MORE": "Đọc thêm",
+    "AUTHOR-NAME": "Lê Khánh Đức",
+    "AUTHOR-ROLE": "Doanh nhân, Nhà văn và Diễn giả.",
+    "SOCIAL-FACEBOOK": "Theo dõi trên Facebook",
+    "SOCIAL-TWITTER": "Theo dõi trên Twitter",
+    "SOCIAL-INSTAGRAM": "Theo dõi trên Instagram",
+    "SMOKE-HEART-TITLE": "Khói Và Trái Tim",
+    "SMOKE-HEART-DESCRIPTION": "Một câu chuyện đầy cảm xúc về sự đấu tranh giữa lý trí và cảm xúc, đưa bạn qua những cung bậc cảm xúc chân thật nhất.",
+    "BUY-COMPLETE-SERIES": "Mua Trọn Bộ",
+    "READER-REVIEWS-TITLE": "Đánh Giá Từ Độc Giả",
+    "READER-REVIEWS-SUBTITLE": "Chia sẻ cảm nhận của bạn, nơi các ý kiến được lắng nghe và trân trọng.",
+    "READ-ALL": "Xem tất cả",
+    "REVIEW-TEXT": "Một tác phẩm cuốn hút, khiến tôi không thể rời mắt khỏi từng trang sách.",
+    "REVIEW-AUTHOR-NAME": "Đánh giá bởi",
+    "UPCOMING-BOOK-TITLE": "Sách Sắp Ra Mắt",
+    "UPCOMING-BOOK-DESCRIPTION": "Một cuốn sách được mong chờ với nội dung độc đáo, chắc chắn sẽ làm bạn ngạc nhiên và thích thú.",
+    "NOTIFY-ME": "Thông báo tôi",
+    "SUBSCRIBE-TITLE": "Đăng ký ngay để nhận thông tin mới nhất",
+    "SUBSCRIBE-EMAIL-PLACEHOLDER": "Nhập email của bạn",
+    "SUBSCRIBE-BUTTON": "Gửi"
+  },
+  "REVIEW": {
+    "TEXT1": "Một tác phẩm xuất sắc, đầy cảm xúc và chiều sâu, nắm bắt bản chất của những đấu tranh trong cuộc sống.",
+    "AUTHOR1": "Mike Sendler",
+    "ROLE1": "Đánh giá về Sách 1",
+    "TEXT2": "Một câu chuyện cuốn hút khiến bạn không thể ngừng đọc, với cốt truyện sâu sắc và nhân vật đáng nhớ.",
+    "AUTHOR2": "Charmaine Tobey",
+    "ROLE2": "Đánh giá về Sách 2",
+    "TEXT3": "Khám phá tuyệt vời về những chủ đề chạm đến trái tim và kích thích trí óc. Rất đáng đọc.",
+    "AUTHOR3": "Delmar Byers",
+    "ROLE3": "Đánh giá về Sách 3",
+    "TEXT4": "Một cuốn sách được viết tinh tế, kết hợp giữa nghệ thuật kể chuyện và những suy ngẫm sâu sắc.",
+    "AUTHOR4": "Shanna Margolis",
+    "ROLE4": "Đánh giá về Sách 4"
+  },
+  "LOGIN": {
+    "WELCOME-BACK": "Chào mừng trở lại!",
+    "CONTENT-LOGIN": "Vui lòng đăng nhập vào tài khoản của bạn hoặc kết nối bằng phương tiện truyền thông xã hội",
+    "SIGN-IN": "Đăng nhập",
+    "SIGN-UP": "Đăng ký",
+    "EMAIL": "Email",
+    "PASSWORD": "Mật khẩu",
+    "SOCIAL-MEDIA": "Đăng nhập bằng mạng xã hội",
+    "FORGOT-PASSWORD": "Quên mật khẩu?",
+    "REMEMBER-ME": "Ghi nhớ tôi",
+    "SIGN-IN-FACEBOOK": "Đăng nhập bằng Facebook",
+    "SIGN-IN-GOOGLE": "Đăng nhập bằng Google",
+    "SIGN-IN-GITHUb": "Đăng nhập bằng Github",
+    "BACK-TO-HOME": "Quay lại trang chủ"
+  },
+  "BIO": {
+    "TITLE": "Về Kathryn",
+    "DESCRIPTION": "Không ai từ chối hạnh phúc vì hạnh phúc mang lại giá trị to lớn.",
+    "MY-STORY": {
+      "TITLE": "Câu Chuyện Của Tôi",
+      "DESCRIPTION": "Ngay từ đầu, những ham muốn không phải tự ghét bỏ bản thân và trốn tránh bản thân, mà ngược lại, chúng gây ra những nỗi đau lớn như lý do cho những ham muốn không tồn tại. Cũng không có lý do gì để chúng ta phải sợ hãi, vì chúng ta, những người đau buồn mà không đau đớn, sợ hãi, do đó, chúng ta tôn thờ, vì chúng ta không có cùng thời gian với công việc lao động và nỗi đau lớn như Will. Cũng không có lý do gì để chúng ta phải sợ hãi, vì chúng ta, những người đau buồn mà không đau đớn, sợ hãi, do đó, chúng ta tôn thờ, vì chúng ta không có cùng thời gian với công việc lao động và nỗi đau lớn như Will.",
+      "FACEBOOK": "Theo dõi trên Facebook",
+      "TWITTER": "Theo dõi trên Twitter",
+      "INSTAGRAM": "Theo dõi trên Instagram",
+      "IMAGE-ALT": "Hình ảnh của Lê Khánh Đức"
+    },
+    "PERSONAL-LIFE": {
+      "TITLE": "Cuộc Sống Cá Nhân",
+      "DESCRIPTION": "Ngay từ đầu, những ham muốn không phải tự ghét bỏ bản thân và trốn tránh bản thân, mà ngược lại, chúng gây ra những nỗi đau lớn như lý do cho những ham muốn không tồn tại. Cũng không có lý do gì để chúng ta phải sợ hãi, vì chúng ta, những người đau buồn mà không đau đớn, sợ hãi, do đó, chúng ta tôn thờ, vì chúng ta không có cùng thời gian với công việc lao động và nỗi đau lớn như Will. Cũng không có lý do gì để chúng ta phải sợ hãi, vì chúng ta, những người đau buồn mà không đau đớn, sợ hãi, do đó, chúng ta tôn thờ, vì chúng ta không có cùng thời gian với công việc lao động và nỗi đau lớn như Will.",
+      "IMAGE-ALT": "Cuộc sống cá nhân của Lê Khánh Đức"
+    },
+    "AWARDS": {
+      "TITLE": "Giải Thưởng",
+      "BEST-AWARDS-2024": "Giải Tác Giả Xuất Sắc 2024",
+      "BEST-AWARDS-2024-DESCRIPTION": "Vì những đóng góp xuất sắc cho văn học.",
+      "BEST-AWARDS-2023": "Sách Bán Chạy Nhất Thế Giới 2024",
+      "BEST-AWARDS-2023-DESCRIPTION": "Được ghi nhận với doanh số kỷ lục toàn cầu.",
+      "BEST-AWARDS-2022": "Tác Giả NYT Bán Chạy 2023",
+      "BEST-AWARDS-2022-DESCRIPTION": "Vinh danh vì cách kể chuyện xuất sắc."
+    },
+    "QUOTE": {
+      "TEXT": "\"Không ai từ chối hạnh phúc vì hạnh phúc mang lại giá trị to lớn.\"",
+      "AUTHOR": "- Lê Khánh Đức"
+    },
+    "FOLLOW": {
+      "TITLE": "Theo dõi @02_10_003",
+      "DESCRIPTION": "Tham gia hành trình của tôi trên Instagram, nơi tôi chia sẻ khoảnh khắc và cảm hứng.",
+      "BUTTON": "Ghé thăm Instagram"
+    }
+  },
+  "CONTACT": {
+    "TITLE": "Liên hệ",
+    "DESCRIPTION": "Không ai từ chối hạnh phúc vì hạnh phúc mang lại giá trị to lớn.",
+    "GET-IN-TOUCH": {
+      "TITLE": "Kết nối với chúng tôi",
+      "DESCRIPTION": "Hãy liên hệ với chúng tôi nếu bạn có bất kỳ câu hỏi hoặc thắc mắc nào.",
+      "EMAIL": "mail@example.com"
+    },
+    "FORM": {
+      "TITLE": "Gửi Tin Nhắn",
+      "PLACEHOLDER": {
+        "NAME": "Tên của bạn",
+        "EMAIL": "Email của bạn",
+        "SUBJECT": "Chủ đề",
+        "MESSAGE": "Nội dung tin nhắn"
+      },
+      "BUTTON": "Gửi Tin Nhắn"
+    }
+  },
+  "REGISTER": {
+    "TITLE": "Tạo Tài Khoản",
+    "FIRST-NAME": {
+      "LABEL": "Tên",
+      "ERROR": "Tên là bắt buộc."
+    },
+    "LAST-NAME": {
+      "LABEL": "Họ",
+      "ERROR": "Họ là bắt buộc."
+    },
+    "EMAIL": {
+      "LABEL": "Email",
+      "REQUIRED": "Email là bắt buộc.",
+      "INVALID": "Email không hợp lệ."
+    },
+    "PASSWORD": {
+      "LABEL": "Mật khẩu",
+      "REQUIRED": "Mật khẩu là bắt buộc.",
+      "MINLENGTH": "Mật khẩu phải có ít nhất 6 ký tự."
+    },
+    "DOB": {
+      "LABEL": "Ngày sinh",
+      "ERROR": "Ngày sinh là bắt buộc."
+    },
+    "BUTTON": "Đăng Ký",
+    "LOGIN": {
+      "TEXT": "Đã có tài khoản?",
+      "LINK": "Đăng Nhập"
+    },
+    "HOME": {
+      "TEXT": "Quay lại trang chủ",
+      "LINK": "Trang Chủ"
+    }
+  }
+}
