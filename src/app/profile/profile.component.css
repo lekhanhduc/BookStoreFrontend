@@ -1,11 +1,21 @@
 .avatar-wrapper {
     width: 150px;
     height: 150px;
-    object-fit: cover;
     display: block;
     margin: 0 auto;
 
     &:hover {
         cursor: pointer;
     }
+}
+
+.avatar-wrapper img.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+
+.avatar-wrapper:hover {
+    cursor: pointer;
 }

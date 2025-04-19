@@ -1,6 +1,81 @@
 <div class="home-page">
+
+    <div class="row justify-content-center mb-4" *ngIf="loading">
+        <div class="col-12 col-md-8 text-center">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
    
     <!-- Hiện thị danh sách Book -->
+  <!-- Danh sách sách -->
+<div class="container my-5" *ngIf="!loading && books.totalElements > 0">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+      <div class="col" *ngFor="let book of books.data">
+        <div
+          class="card h-100 border-0 shadow-sm book-item animate__animated animate__fadeIn"
+          (click)="viewBookDetail(book.bookId)"
+        >
+          <div class="position-relative book-cover-wrapper">
+            <img
+              [src]="book.bookCover"
+              class="card-img-top book-cover-home img-fluid"
+              [alt]="book.title + ' Cover'"
+            />
+            <div class="book-badge-language position-absolute top-0 end-0 m-2">
+              <span class="badge bg-success rounded-pill px-2 py-1">{{ book.language }}</span>
+            </div>
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <h3
+              class="card-title book-item-title fs-5 fw-bold mb-2 text-dark"
+            >
+              {{ book.title }}
+            </h3>
+            <p
+              class="book-description text-muted mb-3 fs-6 flex-grow-1"
+            >
+              {{ book.description | slice:0:80 }}...
+            </p>
+            <button class="btn btn-primary book-item-purchase">
+                {{ book.price | number:'1.0-0' }} VNĐ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Hiển thị khi không có sách -->
+    <div *ngIf="!loading && books.totalElements === 0" class="text-center mt-4">
+        <p class="text-secondary">No books</p>
+    </div>
+
+    <div class="row justify-content-center mt-4" *ngIf="books.totalPages > 0">
+        <div class="col-auto">
+            <nav>
+                <ul class="pagination">
+                    <!-- Nút Previous -->
+                    <li class="page-item" [class.disabled]="books.currentPage === 1">
+                        <button class="page-link" (click)="onPreviousPage()">Previous</button>
+                    </li>
+
+                    <!-- Danh sách các số trang -->
+                    <li class="page-item" [class.active]="page === books.currentPage" *ngFor="let page of pages">
+                        <button class="page-link" (click)="fetchBooks(page)">
+                            {{ page }}
+                        </button>
+                    </li>
+
+                    <!-- Nút Next -->
+                    <li class="page-item" [class.disabled]="books.currentPage === books.totalPages">
+                        <button class="page-link" (click)="onNextPage()">Next</button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
      
     <div class="smoke-and-heart">
         <div class="container-fluid">

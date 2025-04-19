@@ -41,4 +41,12 @@ export class LoginComponent {
       });
   }
 
+  loginWithGoogle(): void {
+    window.location.href = 'http://localhost:9191/identity/api/v1/auth/sign-in-google';
+  }
+
+  loginWithGitHub(): void {
+    window.location.href = 'http://localhost:9191/identity/oauth2/authorization/github';
+  }
+
 }

@@ -81,7 +81,7 @@
     "SOCIAL-MEDIA": "Login with Social Media",
     "SIGN-IN-FACEBOOK": "Sign In with Facebook",
     "SIGN-IN-GOOGLE": "Sign In with Google",
-    "SIGN-IN-GITHUb": "Sign In with Github",
+    "SIGN-IN-GITHUB": "Sign In with Github",
     "BACK-TO-HOME": "Back to Home"
   },
   "BIO": {
@@ -171,5 +171,12 @@
       "TEXT": "Go back home",
       "LINK": "Home"
     }
-  }
+  },
+
+  "CALLBACK": {
+      "SUCCESS": "Login Successful!",
+      "PROVIDER": "You logged in with",
+      "PROCESSING": "Processing Login...",
+      "REDIRECTING": "You will be redirected shortly."
+   }
 }

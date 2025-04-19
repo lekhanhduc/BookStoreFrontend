@@ -7,14 +7,16 @@ import { RegisterComponent } from './register/register.component';
 import { BioComponent } from './bio/bio.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProfileComponent } from './profile/profile.component';
+import { CallbackComponent } from './callback/callback.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
-    { path: 'books', component: BooksComponent },
+    { path: 'books', component: BooksComponent, data: { showBanner: false } },
     { path: 'book-detail/:id', component: BookDetailsComponent, data: { showBanner: false } }, // 1. Không hiện thị banner
     { path: 'sign-in', component: LoginComponent, data: { hideLayout: true } },
     { path: 'sign-up', component: RegisterComponent, data: { hideLayout: true } },
     { path: 'bio', component: BioComponent, data: { showBanner: false } },
     { path: 'contact', component: ContactComponent, data: { showBanner: false } },
     { path: 'profile', component: ProfileComponent, data: { showBanner: false } },
+    { path: 'oauth2/callback/:provider', component: CallbackComponent, data: { showBanner: false, hideLayout: true } },
 ];

@@ -46,10 +46,10 @@
                     <button class="btn btn-outline-primary w-100 mb-3">
                         <i class="fa-brands fa-facebook me-2"></i> {{'LOGIN.SIGN-IN-FACEBOOK' | translate}}
                     </button>
-                    <button class="btn btn-outline-danger w-100 mb-3">
+                    <button class="btn btn-outline-danger w-100 mb-3" (click)="loginWithGoogle()">
                         <i class="fa-brands fa-google me-2"></i> {{'LOGIN.SIGN-IN-GOOGLE' | translate}}
                     </button>
-                    <button class="btn btn-outline-dark w-100">
+                    <button class="btn btn-outline-dark w-100" (click)="loginWithGitHub()">
                         <i class="fa-brands fa-github me-2"></i> {{'LOGIN.SIGN-IN-GITHUB' | translate}}
                     </button>
                 </div>

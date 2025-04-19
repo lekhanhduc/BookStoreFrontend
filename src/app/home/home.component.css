@@ -284,19 +284,64 @@
     margin-bottom: 20px;
 }
 
-.btn-notify-me {
-    padding: 14px 24px;
-    background-color: #915c45;
-    color: #fff;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 5px;
+.btn-notify-me:hover {
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #714131;
 }
 
-.btn-notify-me:hover {
-    background-color: #714131;
+/* Styling cho card sách */
+.book-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+  }
+  
+  .book-item:not(:hover) {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .book-cover-wrapper {
+    width: 100%;
+    height: 250px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f8f9fa; 
+    cursor: pointer;
+  }
+  
+  .book-cover-home {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 8px 8px 0 0;
+
+  }
+  
+  .book-item-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .book-description {
+    line-height: 1.4;
+  }
+  
+  .book-item-purchase {
+    border-radius: 20px;
+  }
+
+  .book-item-purchase {
+    background-color: #946659;
+    width: 80%;
+    padding: 11px 20px;
+    border-radius: 3px;
+    border: none;
+    font-weight: 550;
+    margin: 0 auto;
 }

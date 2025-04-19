@@ -1,95 +1,162 @@
+<!-- Book Detail Section -->
 <div class="wrapper container book-detail-section">
-    <!-- Banner book detail -->
-    <div class="row text-center mb-4">
-        <div class="col-12">
-            <div class="banner-book-detail d-flex align-items-center justify-content-center">
-                <div class="content-banner-book-detail text-center">
-                    <h1 class="display-4 display-md-3">Book Details</h1>
-                    <p class="fs-5">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
-                </div>
-            </div>
+  <!-- Banner book detail -->
+  <div class="row text-center mb-4">
+    <div class="col-12">
+      <div class="banner-book-detail d-flex align-items-center justify-content-center">
+        <div class="content-banner-book-detail text-center">
+          <h1 class="display-4 display-md-3 animate__animated animate__fadeInDown">Book Details</h1>
+          <p class="fs-5 animate__animated animate__fadeInUp">Explore the details of your favorite books</p>
         </div>
+      </div>
     </div>
+  </div>
 
-    <!-- Information book -->
-    <div class="row align-items-start infor-book-section">
-        <!-- Thumbnail -->
-        <div class="col-12 col-md-6">
-            <div class="thumbnail-book text-center">
-                <img [src]="bookDetail?.bookCover || '../../../assets/imgs/book-cover1.png'"
-                    alt="{{ bookDetail?.title || 'Book Cover' }}" class="img-fluid" />
-            </div>
+  <!-- Information book -->
+  <div class="row align-items-start infor-book-section">
+    <!-- Thumbnail -->
+    <div class="col-12 col-md-6">
+      <div class="thumbnail-book text-center position-relative">
+        <!-- Badge ngôn ngữ -->
+        <div class="book-badge-language position-absolute top-0 end-0 m-3">
+          <span class="badge bg-success rounded-pill px-2 py-1">{{ bookDetail?.language || 'English' }}</span>
         </div>
-        <!-- Book Details -->
-        <div class="col-12 col-md-6">
-            <div class="infor-detail-book">
-                <h1 class="book-title">{{ bookDetail?.title || 'Book Title' }}</h1>
-                <p class="book-author"><strong>Author:</strong> {{ bookDetail?.authorName || 'Unknown Author' }}</p>
-                <p class="book-description">
-                    {{ bookDetail?.description || 'No description available.' }}
+        <img
+          [src]="bookDetail?.bookCover || '../../../assets/imgs/book-cover1.png'"
+          alt="{{ bookDetail?.title || 'Book Cover' }}"
+          class="img-fluid book-cover"
+        />
+      </div>
+    </div>
+    <!-- Book Details -->
+    <div class="col-12 col-md-6">
+      <div class="infor-detail-book">
+        <h1 class="book-title">{{ bookDetail?.title || 'Book Title' }}</h1>
+        <p class="book-author"><strong>Author:</strong> {{ bookDetail?.authorName || 'Unknown Author' }}</p>
+        <!-- ISBN -->
+        <p class="book-isbn"><strong>ISBN:</strong> {{ bookDetail?.isbn || 'N/A' }}</p>
+        <!-- Rating (giả lập) -->
+        <div class="book-rating mb-3">
+          <span class="text-warning">★★★★★</span>
+          <span class="text-muted ms-2">(4.5/5 - 120 reviews)</span>
+        </div>
+        <p class="book-description">
+          {{ bookDetail?.description || 'No description available.' }}
+        </p>
+        <!-- Price Section -->
+        <div class="book-price mt-4">
+          <h2 class="text-danger">{{ bookDetail?.price | number:'1.0-0' }} VNĐ</h2>
+          <p class="text-muted">Inclusive of all taxes</p>
+        </div>
+        <!-- Actions Section -->
+        <div class="book-actions mt-4 d-flex gap-3">
+          <button class="btn btn-primary btn-buy-now">Buy Now</button>
+          <button class="btn btn-outline-secondary btn-add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reviews Section -->
+<!-- Description Section -->
+<div class="row description-section mt-5">
+  <div class="col-12">
+    <ul class="nav nav-tabs" id="bookTab" role="tablist">
+      <li class="nav-item" role="presentation"></li>
+      <li class="nav-item" role="presentation">
+        <button
+          class="nav-link active"
+          id="reviews-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#reviews"
+          type="button"
+          role="tab"
+          aria-controls="reviews"
+          aria-selected="true"
+        >
+          Reviews (3)
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="bookTabContent">
+      <div
+        class="tab-pane fade show active p-4"
+        id="reviews"
+        role="tabpanel"
+        aria-labelledby="reviews-tab"
+      >
+        <div class="review-list">
+          <!-- Review 1 -->
+          <div class="review-item mb-4 p-3 border rounded">
+            <div class="d-flex align-items-start">
+              <img
+                src="https://randomuser.me/api/portraits/men/32.jpg"
+                alt="User Avatar"
+                class="review-avatar rounded-circle me-3"
+              />
+              <div class="review-content flex-grow-1">
+                <div class="d-flex justify-content-between">
+                  <h5 class="review-author mb-1">John Doe</h5>
+                  <span class="review-date text-muted">April 5, 2025</span>
+                </div>
+                <div class="review-rating text-warning mb-2">★★★★★</div>
+                <p class="review-text">
+                  This book is amazing! It covers every Angular version in detail and provides great insights into the framework's evolution. Highly recommend!
                 </p>
-                <!-- Price Section -->
-                <div class="book-price mt-4">
-                    <h2 class="text-danger">{{ bookDetail?.price | currency: 'USD':'symbol':'1.0-0' }}</h2>
-                    <p class="text-muted">Inclusive of all taxes</p>
-                </div>
-                <!-- Actions Section -->
-                <div class="book-actions mt-4 d-flex gap-3">
-                    <button class="btn btn-primary btn-buy-now">Buy Now</button>
-                    <button class="btn btn-outline-secondary btn-add-to-cart">Add to Cart</button>
-                </div>
+              </div>
             </div>
+          </div>
+          <!-- Review 3 -->
+          <div class="review-item mb-4 p-3 border rounded">
+            <div class="d-flex align-items-start">
+              <img
+                src="https://randomuser.me/api/portraits/men/15.jpg"
+                alt="User Avatar"
+                class="review-avatar rounded-circle me-3"
+              />
+              <div class="review-content flex-grow-1">
+                <div class="d-flex justify-content-between">
+                  <h5 class="review-author mb-1">Mark Wilson</h5>
+                  <span class="review-date text-muted">April 1, 2025</span>
+                </div>
+                <div class="review-rating text-warning mb-2">★★★★★</div>
+                <p class="review-text">
+                  One of the best books on Angular I've read! The explanations are clear, and the version comparisons are incredibly helpful.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
 
-    <!-- Description Section -->
-    <div class="row description-section mt-5">
-        <div class="col-12">
-            <ul class="nav nav-tabs" id="bookTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="description-tab" data-bs-toggle="tab"
-                        data-bs-target="#description" type="button" role="tab" aria-controls="description"
-                        aria-selected="true">Description</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews"
-                        type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews (0)</button>
-                </li>
-            </ul>
-            <div class="tab-content" id="bookTabContent">
-                <div class="tab-pane fade show active p-3" id="description" role="tabpanel"
-                    aria-labelledby="description-tab">
-                    <p>{{ bookDetail?.description || 'No detailed description available.' }}</p>
-                </div>
-                <div class="tab-pane fade p-3" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
-                    <p>No reviews yet.</p>
-                </div>
+        <!-- Review Form -->
+        <div class="review-form mt-5">
+          <h4 class="mb-4">Leave a Review</h4>
+          <form>
+            <div class="mb-3">
+              <label for="rating" class="form-label">Your Rating</label>
+              <div class="rating-stars">
+                <span class="star" data-value="1">★</span>
+                <span class="star" data-value="2">★</span>
+                <span class="star" data-value="3">★</span>
+                <span class="star" data-value="4">★</span>
+                <span class="star" data-value="5">★</span>
+              </div>
             </div>
+            <div class="mb-3">
+              <label for="reviewText" class="form-label">Your Review</label>
+              <textarea
+                class="form-control"
+                id="reviewText"
+                rows="4"
+                placeholder="Write your review here..."
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit-review">Submit Review</button>
+          </form>
         </div>
+      </div>
     </div>
-
-    <!-- Related Products Section -->
-    <!-- <div class="row related-products-section mt-5">
-        <div class="col-12">
-            <h3 class="related-products-title text-center">Related Products</h3>
-            <div class="row g-3">
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card product-item">
-                        <img src="../../../assets/imgs/book-cover2.png" class="card-img-top" alt="Related Product">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">John Roberts</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                    <div class="card product-item">
-                        <img src="../../../assets/imgs/book-cover3.png" class="card-img-top" alt="Related Product">
-                        <div class="card-body text-center">
-                            <h5 class="card-title">Another Title</h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+  </div>
+</div>
 </div>

@@ -28,7 +28,7 @@
               <h3 class="h5 card-title book-item-title">{{ book.title }}</h3>
               <p class="text-secondary">{{ book.description }}</p>
               <button class="btn btn-primary book-item-purchase">
-                {{ book.price | currency:'USD' }}
+                {{ book.price | number:'1.0-0' }} VNĐ
               </button>
             </div>
           </div>

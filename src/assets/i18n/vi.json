@@ -175,5 +175,12 @@
       "TEXT": "Quay lại trang chủ",
       "LINK": "Trang Chủ"
     }
-  }
+  },
+
+  "CALLBACK": {
+      "SUCCESS": "Đăng nhập thành công!",
+      "PROVIDER": "Bạn đã đăng nhập bằng",
+      "PROCESSING": "Đang xử lý đăng nhập...",
+      "REDIRECTING": "Bạn sẽ được chuyển hướng ngay."
+    }
 }
